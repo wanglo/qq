@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+</head>
+<body>
+	<script>
+		// function abc(){
+		// 	var a=22;
+		// 	function aa(){
+		// 		alert(a);
+		// 		var f=90;
+		// 		function ff(){
+		// 			alert(f);
+		// 		}
+		// 		return ff;
+		// 	}
+		// 	return aa;
+		// }
+		// abc()();
+		// abc()()();
+
+		// var bc=abc();
+		// console.log(bc);
+		// console.log(bc());
+		// bc()();
+
+
+		function out(){
+			var num=999;
+			num++;
+			function inner(){
+				num++;
+				alert(num);
+			}
+			return inner;
+		}
+		var result=out();
+		result();
+		result();
+		result();
+		out()();
+		out()();
+		out()();
+
+	</script>
+</body>
+</html>
